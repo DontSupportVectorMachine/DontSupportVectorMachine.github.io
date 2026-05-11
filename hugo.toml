@@ -1,0 +1,10 @@
+# baseURL = 'https://example.org/'
+# locale = 'en-us'
+# title = 'My New Hugo Project'
+
+
+# 这是你的 Hugo 博客配置文件
+baseURL = 'https://dontsupportvectormachine.github.io/'
+languageCode = 'zh-cn'
+title = '我的新博客'
+theme = 'PaperMod'  # 确保与你安装的主题文件夹名一致
