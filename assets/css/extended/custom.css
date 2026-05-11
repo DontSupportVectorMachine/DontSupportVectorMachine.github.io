@@ -1,0 +1,78 @@
+/* === 全局背景 === */
+body {
+    /* 把图片链接换成你自己喜欢的背景图，可以传到 GitHub 仓库的 static 目录下 */
+    background: url('https://picsum.photos/1920/1080?random=1') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 让整个页面有一层柔和的半透明遮罩，确保文字可读 */
+.main {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* 首页欢迎区域卡片美化 */
+.home-info {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.home-info h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 0.2em;
+}
+
+.home-info p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* 文章条目卡片美化 */
+.post-entry {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* 标题样式微调 */
+.entry-title {
+    font-size: 1.4em !important;
+    font-weight: 700;
+}
+
+/* 摘要和日期颜色微调 */
+.entry-content {
+    color: #555;
+}
+
+.post-meta {
+    color: #777;
+}
+
+/* 导航栏也加一点点透明感 */
+.nav {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* 页尾保持简洁 */
+footer {
+    color: #888;
+}
