@@ -1,20 +1,13 @@
 /* === 全局背景 === */
 body {
-    /* 把图片链接换成你自己喜欢的背景图，可以传到 GitHub 仓库的 static 目录下 */
     background: url('https://picsum.photos/1920/1080?random=1') no-repeat center center fixed;
     background-size: cover;
 }
 
-/* 让整个页面有一层柔和的半透明遮罩，确保文字可读 */
-.main {
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px;
-}
+/* === 让导航栏保持全宽，不被卡片样式影响 === */
+/* 注意：这里保持为空，或者直接不设置即可，因为导航栏默认就是全宽的 */
 
-/* 首页欢迎区域卡片美化 */
+/* === 首页欢迎区域卡片美化 (限定其宽度并居中) === */
 .home-info {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -22,6 +15,8 @@ body {
     padding: 30px !important;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     text-align: center;
+    max-width: 700px;  /* 限制卡片最大宽度 */
+    margin: 20px auto; /* 卡片水平居中 */
 }
 
 .home-info h1 {
@@ -35,18 +30,19 @@ body {
     color: #444;
 }
 
-/* 文章条目卡片美化 */
-.post-entry {
-    background: rgba(255,255,255,0.7);
+/* === 文章条目卡片美化 (同样限定宽度并居中) === */
+.main .post-entry {
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 15px 20px;
-    margin: 15px 0;
+    margin: 15px auto; /* 卡片水平居中 */
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 700px; /* 限制卡片最大宽度 */
 }
 
-.post-entry:hover {
+.main .post-entry:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
