@@ -1,19 +1,19 @@
-# 这是你的 Hugo 博客配置文件
 baseURL = 'https://dontsupportvectormachine.github.io/'
 title = '我的新博客'
-theme = 'PaperMod' # 确保与你安装的主题文件夹名一致
+theme = 'PaperMod'
 locale = 'zh-cn'
 
 [params]
-  homeInfoParams:
-    Title: "Hi there 👋"
-    Content: "欢迎来到我的博客，这里记录了我的学习与思考。"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+
+[params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "欢迎来到我的博客，这里记录了我的学习与思考。"
 
 [[menu.main]]
   identifier = "archives"
