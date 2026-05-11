@@ -1,15 +1,11 @@
 ---
-
 date: '2026-05-11T12:50:41+08:00'
-
 draft: false
-
 title: '今日学习记录 — 2026-05-11'
-
 tags: ['学习记录']
-
 categories: ['日常']
-
+cover:
+    image: '/img/default-cover.jpg'    # 放入 static/img/ 下的路径
 ---
 
 

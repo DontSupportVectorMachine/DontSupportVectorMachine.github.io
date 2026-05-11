@@ -1,24 +1,22 @@
 ---
-
 date: '2026-05-11T12:50:41+08:00'
-
 draft: false
-
 title: '从零搭建 Hugo + GitHub Pages 个人博客（避坑版）'
-
 tags: ['博客搭建', 'Hugo', 'GitHub']
-
 categories: ['教程']
-
+cover:
+    image: '/img/default-cover.jpg'    # 放入 static/img/ 下的路径
+    alt: '封面描述'
+    caption: '图片来源'
+    relative: false
 ---
-
 
 
 > 这是一篇**踩坑之后重新整理的避坑教程**，由于本人完全菜狗入门，可能有很多蠢问题都遇到了，也许你不会遇到。  
 >
 > 跟着它走，你不会遇到那些<u>已经被我趟过的雷</u>。
-
-
+>
+> PS：这只是最基本的样式！！！目的是用于快速呈现和搭建自己的极简博客，本博客的风格以及切换，具体操作请看下篇教程（Stack样式篇及部分避坑）
 
 ---
 

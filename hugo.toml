@@ -1,34 +1,50 @@
 baseURL = 'https://dontsupportvectormachine.github.io/'
 title = '我的新博客'
-theme = 'PaperMod'
+theme = 'Stack'
 locale = 'zh-cn'
+paginate = 5
 
+# 主题基础设置
 [params]
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
+  # 侧边栏头像
+  sidebar.avatar = '/img/avatar.png'   # 需要你准备一张头像图片放在 static/img/avatar.png
+  # 副标题
+  sidebar.subtitle = '记录我的学习生涯'
+  # 文章列表显示摘要与否
+  article.excerpt = true
+  # 代码高亮
+  highlight.highlightStyle = 'github-dark'
+  # 保证首页地址不出错
+  mainSections = ["posts"]
 
-[params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "欢迎来到我的博客，这里记录了我的学习与思考。"
+# 主菜单
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
   identifier = "archives"
   name = "归档"
   url = "/archives/"
-  weight = 10
+  weight = 2
 
 [[menu.main]]
   identifier = "categories"
   name = "分类"
   url = "/categories/"
-  weight = 20
+  weight = 3
 
 [[menu.main]]
   identifier = "tags"
   name = "标签"
   url = "/tags/"
-  weight = 30
+  weight = 4
+
+# 友情链接（可选）
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/DontSupportVectorMachine"
+  weight = 1
