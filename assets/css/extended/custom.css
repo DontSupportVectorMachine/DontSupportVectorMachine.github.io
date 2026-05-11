@@ -1,6 +1,8 @@
 /* === 全局背景 === */
+/* ===  background: url('https://picsum.photos/1920/1080?random=1') no-repeat center center fixed;  ===*/
 body {
-    background: url('https://picsum.photos/1920/1080?random=1') no-repeat center center fixed;
+    
+    background: url('/bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
